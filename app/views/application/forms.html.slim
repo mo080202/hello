@@ -1,0 +1,69 @@
+h1 Forms
+form method="post" action="/register"
+  .field
+    label
+      | First Name
+      input type="text" name="first_name"
+
+
+
+  .field
+    label
+      | Last Name
+      input type="text" name="last_name"
+
+
+
+  .field
+    label
+      | Email
+      input type="email" name="email_address"
+
+
+
+  .field
+    label
+      | Password
+      input type="password" name="password"
+
+
+
+  .field
+    label
+      input type="checkbox" name="newsleter" value="1"
+      | Yes, I would like to receive your newsletter!
+
+
+
+  .field
+    label
+      input type="radio" name="gender" value="y"
+      | Male
+
+    label
+      input type="radio" name="gender" value="n"
+      | Female
+
+
+
+  .field
+    label
+      | Year of Birth
+      select name="yearofbirth"
+        option
+        option value="1985">1985
+        option value="1984">1984
+        option value="1983">1983
+        option value="1982">1982
+
+
+
+  .field
+    label
+      | How would you describe yourself?
+      textarea name="description" rows="20" cols="80"
+
+
+
+  .controls
+    button type="submit" Register
